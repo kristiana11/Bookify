@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# Bookify
+Web development project made my Kristiana and Andrew for Web Development II. The project uses NodeJS for the back-end integration and React for the front-end. 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Project Idea
+The purpose of Bookify is to provide an online platform for users to explore, purchase, and read books convenietly. We based this project off of Kindle/Apple Books. Bookify will have a user-friendly interface that encourages user to browse books, search/discovery, user registration, shopping cart and checkout, and users should be able to manage their profile. The target audience for Bookify include book lovers of all age groups who prefer browsing and purchasing books online or individuals who enjoy exploring a range of genres. Book browsing and searching, user registration, and shopping cart and checkout are some of Bookify's functionality. We are also hoping to implement a personalized recommendations to users based on their reading history and preference. Say you liked reading 'Harry Potter and the Sorcerer's Stone', then Bookify would recommend a novel similar.  It could be The Chamber of Secrets or something entirely different.
 
-## Available Scripts
+# Planning
+Please visit our [planning](https://github.com/kristiana11/Bookify/tree/main/Planning) page to look at the detailed plan for both the front-end and back-end development of the project.
 
-In the project directory, you can run:
+# Team Information
+### Andrew Ortega:
+#### GitHub: aortega789
+I am from Los Angeles, California. I am a double major, Mathematics and Computer Science. My interesting fact is that I am a gamer.  With my degrees, I want to go into the gaming industry and do what I love, which would be to make video games and work on them.
 
-### `npm start`
+### Kristiana Kirk
+#### GitHub: kristiana11
+I am from Colorado Springs, Colorado. My major is in Computer Science with a minor in Cybersecurity. A fun fact about me is that I love the outdoors (climbing, biking, hiking, snowboarding, etc). With my degree, I know I want to do something with front-end and talking to people.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Corey Moreno
+#### GitHub: CoreyjMoreno
+I am from Temecula, California. My major is in Computer Science with a minor in Spanish. Fun fact about be is that I am an EDM producer. With my major, I want to go into web developement and on the side create mods for video games.
