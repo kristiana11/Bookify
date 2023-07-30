@@ -7,8 +7,16 @@ The purpose of Bookify is to provide an online platform for users to explore, pu
 # Planning
 Please visit our [planning](https://github.com/kristiana11/Bookify/tree/main/Planning) page to look at the detailed plan for both the front-end and back-end development of the project.
 
+# Phase-1 Deliverable Plan
+
+
+# Phase-2 Deliverable Plan
+
+
+# Overview of Final Project Proposal Plan
+
 # Team Information
-### Andrew Ortega:
+### Andrew Ortega
 #### GitHub: aortega789
 I am from Los Angeles, California. I am a double major, Mathematics and Computer Science. My interesting fact is that I am a gamer.  With my degrees, I want to go into the gaming industry and do what I love, which would be to make video games and work on them.
 
