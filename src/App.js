@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import './App.css';
-import SearchBar from './components/SearchBar'
-import SearchResultsList from "./components/SearchResultsList"
+import SearchBar from "./components/Navbar/SearchBar";
+import SearchResultsList from "./components/Navbar/SearchResultsList";
 
 function App() {
 

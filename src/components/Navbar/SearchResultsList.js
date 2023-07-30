@@ -2,6 +2,7 @@ import React from 'react'
 import "./SearchResultsList.css"
 import SearchResult from './SearchResult'
 
+
 const SearchResultsList = ({ results }) => {
   return (
     <div className="results-list">
