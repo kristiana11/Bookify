@@ -1,0 +1,8 @@
+{"_id":{"$oid":"64c1b23b27d082f9a27d9955"},"Book Title":"Harry Potter and the Chamber of Secrets","Author":"J.K. Rowling","Price":"$9.99"}
+{"_id":{"$oid":"64c1b2a527d082f9a27d9956"},"Title":"Harry Potter and the Order of the Phoenix","Author":"J.K. Rowling","Price":"$10.99"}
+{"_id":{"$oid":"64c1b2c127d082f9a27d9957"},"Title":"Harry Potter and the Chamber of Secrets","Author":"J.K. Rowling","Price":"$9.99"}
+{"_id":{"$oid":"64c1b35527d082f9a27d9958"},"Title":"Harry Potter and the Sorcerers Stone","Author":"J.K. Rowling","Price":"$9.99"}
+{"_id":{"$oid":"64c1b38227d082f9a27d9959"},"Title":"Harry Potter and the Prisoner of Azkaban","Author":"J.K. Rowling","Price":"$9.99"}
+{"_id":{"$oid":"64c1b39627d082f9a27d995a"},"Title":"Harry Potter and the Goblet of Fire","Author":"J.K. Rowling","Price":"$9.99"}
+{"_id":{"$oid":"64c1b3db27d082f9a27d995b"},"Title":"Harry Potter and the Half-Blood Prince","Author":"J.K. Rowling","Price":"$11.99"}
+{"_id":{"$oid":"64c1b43927d082f9a27d995c"},"Title":"Harry Potter and the Deathly Hallows","Author":"J.K. Rowling","Price":"$11.99"}
