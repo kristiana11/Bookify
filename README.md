@@ -21,6 +21,10 @@ For Phase-1 of our deliverable, we split up the tasks into front-end and back-en
 <img width="227" alt="Screenshot 2023-07-30 at 11 45 58 PM" src="https://github.com/kristiana11/Bookify/assets/93414377/f3a41bd0-4b2f-4751-b3ee-9d0826fe88f5">
 
 + User Sign In: Corey was in charge of this implementation. He created the beginner logic to allow users to create and sign into their account. He was able to implement the login, but not the create yet. He will do taht in phase-2 of our deliverable.
+<img width="354" alt="Screenshot 2023-07-30 at 11 48 08 PM" src="https://github.com/kristiana11/Bookify/assets/93414377/dc8d878c-f112-4f28-b852-4ede4196d6e7">
+
+
++ What our page looks like so far:
 <img width="989" alt="Screenshot 2023-07-30 at 11 45 08 PM" src="https://github.com/kristiana11/Bookify/assets/93414377/247af22f-1b0c-4443-af06-74e757a3e9bf">
 
 # Phase-2 Deliverable Plan
