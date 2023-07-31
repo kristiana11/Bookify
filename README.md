@@ -7,6 +7,9 @@ The purpose of Bookify is to provide an online platform for users to explore, pu
 # Planning
 Please visit our [planning](https://github.com/kristiana11/Bookify/tree/main/Planning) page to look at the detailed plan for both the front-end and back-end development of the project.
 
+# Deliverables
+Please visit our [deliverables](https://github.com/kristiana11/Bookify/tree/main/Deliverables) page to look at the deliverables for this project. 
+
 # Technologies Used / Special Instructions
 We are using MongoDB, Postman (API), and React. One instruction we learned was to 'npm run deploy' which update our GitPages in order to see if our front-end was working. Running the project locally might be hard as you will have to download some of the packages that is already in the node module folder for us (but is ignored in this repository)
 
