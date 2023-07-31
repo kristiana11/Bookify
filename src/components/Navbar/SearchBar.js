@@ -8,21 +8,19 @@ const SearchBar = ({ setResults }) => {
 
   const fetchData = (value) => {
     fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => {
-        const results = response.data.filter((book) => {
+      .then((response) => response.json())
+      .then((json) => {
+        const results = json.filter((user) => {
           return (
-            value &&
-            book &&
-            book.name &&
-            book.name.toLowerCase().includes(value.toLowerCase())
-          );
-        });
-        setResults(results);
+            value && 
+            user && 
+            user.name &&
+            user.name.toLowerCase().includes(value)
+          )
+        })
+        setResults(results)
       })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  };
+  }
 
   const handleChange = (value) => {
     setInput(value);
