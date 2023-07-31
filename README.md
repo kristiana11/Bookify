@@ -8,12 +8,28 @@ The purpose of Bookify is to provide an online platform for users to explore, pu
 Please visit our [planning](https://github.com/kristiana11/Bookify/tree/main/Planning) page to look at the detailed plan for both the front-end and back-end development of the project.
 
 # Phase-1 Deliverable Plan
+For Phase-1 of our deliverable, we split up the tasks into front-end and back-end of the features instead of doing all front-end and waiting for the back-end. This helped so we could each do a chunk of the work for our project. 
 
+### Features/Functionalities implemented:
++ Navbar (search bar): Kristiana made this navbar and was able to style it to the Bookify look. I was able to make it work functionally in the front-end. I connected it to an API website where you can look up items. Unfortunately, I am unable to implement it fully due to our database not working properly. With that being said, we are taking the databse implementation into phase-2 of our deliverable.
++ Book Database: Andrew was in charge of this implementation. To start out, he used the Harry Potter books as a basis for what we wanted to display. This included the id, title, author, description, cover image, and the price of the book. Unfortunately, he was unable to implement it fully in time for phase-1. He was able to create the book title and everything like that.
++ User Sign In: Corey was in charge of this implementation. He created the beginner logic to allow users to create and sign into their account. He was able to implement the login, but not the create yet. He will do taht in phase-2 of our deliverable.
 
 # Phase-2 Deliverable Plan
+For Phase-2 of our deliverable, we will have more implementations to due in order to finish up our project. Originally we only had three tasks, but with the complications from the first phase, we decided it was best to push it to phase-2.
 
+### Features/Functionalities that will be implemented:
+#### From Phase-1:
++ Book Database: Krsitiana/Andrew
++ Book Details: Kristiana/Andrew
++ Create Account: Corey
+### Phase-2:
++ Navigation (home page): Corey
++ Shopping Cart/Checkout: Kristiana
++ Bookshelf: Andrew
 
 # Overview of Final Project Proposal Plan
+Our final plan for Bookify is to implement a list of React components like a navigation bar, home page, book listing/details, user authentication, shopping cart/checkout, and a user bookshelf. This requires us to know back-end and front-end development. We have functions and logics for each component that is listed in our Group Project Final Draft in our planning foler. This will help us keep track of which function is for what. With that being said, we will also have API request-response formats and endpoint routes. We want our design to be user-friendly. We are basing it off of a simple Kindle or Apple books. Having a simple way of looking at their bookshelf, searching up books, and loggin in/signing out. We originally wanted a ton of books, but to make it on a do-able scale, we decided to do the Harry Potter books for right now until we implement everything.
 
 # Team Information
 ### Andrew Ortega
