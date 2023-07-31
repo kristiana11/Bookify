@@ -16,9 +16,24 @@
   min-width: 200px
 }
 
+.login-bar {
+  text-align: left;
+  width: 15%;
+  margin-left: 20px; 
+  margin-right: auto;
+  min-width: 200px
+}
+
 h1 {
   font-family: "Comic Sans MS", cursive, sans-serif;
   color: rosybrown;
   font-size: 55px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: rosybrown;
+  font-size: 25px;
   margin-bottom: 20px;
 }
