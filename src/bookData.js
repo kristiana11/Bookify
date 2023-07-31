@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import axios from 'axios'
 
 
-class PostList extends Component{
+class bookData extends Component{
     constructor(props){
         super(props)
         this.state ={
@@ -49,4 +49,5 @@ class PostList extends Component{
         )
     }
 }
-export default PostList
+export default bookData
+
