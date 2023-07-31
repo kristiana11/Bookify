@@ -1,32 +1,33 @@
-import React, { useState } from 'react'
-import { FaSearch } from "react-icons/fa"
-import "./SearchBar.css"
+import React, { useState } from 'react';
+import { FaSearch } from "react-icons/fa";
+import "./SearchBar.css";
+import axios from 'axios';
 
-
-const SearchBar = ({setResults }) => {
-
+const SearchBar = ({ setResults }) => {
   const [input, setInput] = useState("");
 
   const fetchData = (value) => {
     fetch("https://jsonplaceholder.typicode.com/users")
-      .then((response) => response.json())
-      .then((json) => {
-        const results = json.filter((user) => {
+      .then((response) => {
+        const results = response.data.filter((book) => {
           return (
-            value && 
-            user && 
-            user.name &&
-            user.name.toLowerCase().includes(value)
-          )
-        })
-        setResults(results)
+            value &&
+            book &&
+            book.name &&
+            book.name.toLowerCase().includes(value.toLowerCase())
+          );
+        });
+        setResults(results);
       })
-  }
-  
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  };
+
   const handleChange = (value) => {
-    setInput(value)
-    fetchData(value)
-  }
+    setInput(value);
+    fetchData(value);
+  };
 
   return (
     <div className="input-wrapper">
@@ -37,7 +38,8 @@ const SearchBar = ({setResults }) => {
         onChange={(e) => handleChange(e.target.value)}
       />
     </div>
-  )
-}
+  );
+};
 
-export default SearchBar
+export default SearchBar;
+
