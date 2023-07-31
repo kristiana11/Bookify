@@ -15,8 +15,13 @@ For Phase-1 of our deliverable, we split up the tasks into front-end and back-en
 
 ### Features/Functionalities implemented:
 + Navbar (search bar): Kristiana made this navbar and was able to style it to the Bookify look. I was able to make it work functionally in the front-end. I connected it to an API website where you can look up items. Unfortunately, I am unable to implement it fully due to our database not working properly. With that being said, we are taking the databse implementation into phase-2 of our deliverable.
+<img width="394" alt="Screenshot 2023-07-30 at 11 44 00 PM" src="https://github.com/kristiana11/Bookify/assets/93414377/75ed7c3d-d6d4-4994-abe5-e36a17babe4b">
+
 + Book Database: Andrew was in charge of this implementation. To start out, he used the Harry Potter books as a basis for what we wanted to display. This included the id, title, author, description, cover image, and the price of the book. Unfortunately, he was unable to implement it fully in time for phase-1. He was able to create the book title and everything like that.
+<img width="227" alt="Screenshot 2023-07-30 at 11 45 58 PM" src="https://github.com/kristiana11/Bookify/assets/93414377/f3a41bd0-4b2f-4751-b3ee-9d0826fe88f5">
+
 + User Sign In: Corey was in charge of this implementation. He created the beginner logic to allow users to create and sign into their account. He was able to implement the login, but not the create yet. He will do taht in phase-2 of our deliverable.
+<img width="989" alt="Screenshot 2023-07-30 at 11 45 08 PM" src="https://github.com/kristiana11/Bookify/assets/93414377/247af22f-1b0c-4443-af06-74e757a3e9bf">
 
 # Phase-2 Deliverable Plan
 For Phase-2 of our deliverable, we will have more implementations to due in order to finish up our project. Originally we only had three tasks, but with the complications from the first phase, we decided it was best to push it to phase-2.
