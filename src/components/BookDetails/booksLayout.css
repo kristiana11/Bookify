@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #f1f5f8;
+    color:#222;
+}
+
+        
+
+
+.listOfBooks{
+    width: 90vw;
+    width: 1170px;
+    padding: 5px auto;
+    display: grid;
+    gap: 2rem;
+}
+
+@media screen and (min-width:750px) {
+    .listOfBooks{
+        grid-template-rows: repeat(1,1fr);
+    }
+    .books{
+        background: rgb(172, 14, 14);
+        border-radius: 2rem;
+        padding: 1rem 3rem;
+    }
+    .books h2{
+        font-size: 12px;
+    }
+   
+
+
+
+}
