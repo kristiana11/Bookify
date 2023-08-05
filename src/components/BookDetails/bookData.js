@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import axios from 'axios'
+import './PostList.css'
+
 
 
 class PostList extends Component{
@@ -17,11 +19,8 @@ class PostList extends Component{
             console.log(response)
             this.setState({posts: response.data})
         })
-        .catch(error => {
-            console.log(error)
-            this.setState({errorMsg: 'Error retrieving data'})
-        })
     }
+    
     render(){
         const{posts, errorMsg}= this.state
         return(
@@ -30,17 +29,22 @@ class PostList extends Component{
                 
                 {
                     posts.length ?
-                    posts.map(post => <div key={post._id}>
-                        <img src={post.url} alt = 'a Harry Potter Cover'/>
-                        <br>
-                        </br>
-                        {post.Title}
-                        <br>
-                        </br>
-                        {post.Author}
-                        <br>
-                        </br>
-                        {post.Price}
+                    posts.map(post => <div key={post._id} >
+                        <h1 className='listOfBooks'>
+                            <h2 className='books'>
+                            {post.Title}
+                            <p>
+                            {post.Price}
+                            </p>
+                            <img src ={post.url} alt ='book cover'/>
+                            <button onClick={this.deleteSelectItem}>
+                                 Delete
+                            </button>
+                            </h2>
+                        </h1>
+                       
+                        
+                       
                         </div>) :
                     null
                 }
