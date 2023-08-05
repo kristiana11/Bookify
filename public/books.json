@@ -3,42 +3,42 @@
     "_id":{"$oid":"64c1b2a527d082f9a27d9956"},
     "Title":"Harry Potter and the Order of the Phoenix",
     "Author":"J.K. Rowling",
-    "Price":"$10.99", 
+    "Price":"10.99", 
     "url": "https://m.media-amazon.com/images/I/516c41oodRL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg" 
 },
 {
     "_id":{"$oid":"64c1b2c127d082f9a27d9957"},
     "Title":"Harry Potter and the Chamber of Secrets",
     "Author":"J.K. Rowling",
-    "Price":"$9.99", 
+    "Price":"9.99", 
     "url": "https://m.media-amazon.com/images/I/91OINeHnJGL._AC_UF350,350_QL50_.jpg"
 },
 {
     "_id":{"$oid":"64c1b35527d082f9a27d9958"},
     "Title":"Harry Potter and the Sorcerers Stone",
     "Author":"J.K. Rowling",
-    "Price":"$9.99",
+    "Price":"9.99",
     "url": "https://target.scene7.com/is/image/Target/GUEST_856c906a-8925-43a5-8245-facaa4e947cc?wid=488&hei=488&fmt=pjpeg"
 },
 {
     "_id":{"$oid":"64c1b38227d082f9a27d9959"},
     "Title":"Harry Potter and the Prisoner of Azkaban",
     "Author":"J.K. Rowling",
-    "Price":"$9.99", 
+    "Price":"9.99", 
     "url": "https://prodimage.images-bn.com/pimages/9780439136365_p0_v1_s1200x630.jpg"
 },
 {
     "_id":{"$oid":"64c1b39627d082f9a27d995a"},
     "Title":"Harry Potter and the Goblet of Fire",
     "Author":"J.K. Rowling",
-    "Price":"$9.99", 
+    "Price":"9.99", 
     "url": "https://prodimage.images-bn.com/pimages/9780439139601_p0_v1_s1200x630.jpg" 
 },
 {
     "_id":{"$oid":"64c1b3db27d082f9a27d995b"},
     "Title":"Harry Potter and the Half-Blood Prince",
     "Author":"J.K. Rowling",
-    "Price":"$11.99", 
+    "Price":"11.99", 
     "url": "https://m.media-amazon.com/images/I/61sXBXmAWML._AC_UF1000,1000_QL80_.jpg"
 },
 
@@ -46,168 +46,168 @@
     "_id":{"$oid":"64c1b43927d082f9a27d995c"},
     "Title":"Harry Potter and the Deathly Hallows",
     "Author":"J.K. Rowling",
-    "Price":"$11.99", 
+    "Price":"11.99", 
     "url": "https://m.media-amazon.com/images/I/51jyI6lYi1L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995d"},
     "Title":"Percy Jackson and the Olympians: The Lightning Theif",
     "Author":"Rick Riordan",
-    "Price":"$8.99", 
+    "Price":"8.99", 
     "url": "https://m.media-amazon.com/images/I/51KGQNxotzL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995e"},
     "Title":"Percy Jackson and the Olympians: The Sea of Monsters",
     "Author":"Rick Riordan",
-    "Price":"$8.99", 
+    "Price":"8.99", 
     "url": "https://m.media-amazon.com/images/I/51lGOhJcAgL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995f"},
     "Title":"Percy Jackson and the Olympians: The Titan's Curse",
     "Author":"Rick Riordan",
-    "Price":"$9.99", 
+    "Price":"9.99", 
     "url": "https://m.media-amazon.com/images/I/41JnaDhzXSL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995g"},
     "Title":"Percy Jackson and the Olympians: The Battle of the Labyrinth",
     "Author":"Rick Riordan",
-    "Price":"$9.99", 
+    "Price":"9.99", 
     "url": "https://m.media-amazon.com/images/I/51HoXHolqNL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995h"},
     "Title":"Percy Jackson and the Olympians: The Last Olympian",
     "Author":"Rick Riordan",
-    "Price":"$9.99", 
+    "Price":"9.99", 
     "url": "https://m.media-amazon.com/images/I/51Lrr+kMgwL._SY344_BO1,204,203,200_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995i"},
     "Title":"A Game of Thrones",
     "Author":"George R. R. Martin",
-    "Price":"$10.99", 
+    "Price":"10.99", 
     "url": "https://m.media-amazon.com/images/I/51DGe0uFHCL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995j"},
     "Title":"A Clash of Kings",
     "Author":"George R. R. Martin",
-    "Price":"$12.99", 
+    "Price":"12.99", 
     "url": "https://m.media-amazon.com/images/I/51bkBIA1gEL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995k"},
     "Title":"A Storm of Swords",
     "Author":"George R. R. Martin",
-    "Price":"$13.99", 
+    "Price":"13.99", 
     "url": "https://m.media-amazon.com/images/I/51yh24jlQpL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995l"},
     "Title":"A Feast For Crows ",
     "Author":"George R. R. Martin",
-    "Price":"$14.99", 
+    "Price":"14.99", 
     "url": "https://m.media-amazon.com/images/I/51TgwgsDjAL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995m"},
     "Title":"A Dance with Dragons",
     "Author":"George R. R. Martin",
-    "Price":"$15.99", 
+    "Price":"15.99", 
     "url": "https://m.media-amazon.com/images/I/51vKuEw1CvL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995n"},
     "Title":"It",
     "Author":"Stephen King",
-    "Price":"$10.99", 
+    "Price":"10.99", 
     "url": "https://m.media-amazon.com/images/I/41RUmch1aRL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995o"},
     "Title":"The Shining",
     "Author":"Stephen King",
-    "Price":"$11.99", 
+    "Price":"11.99", 
     "url": "https://m.media-amazon.com/images/I/41ksNxnzTIL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995p"},
     "Title":"Pet Semetary",
     "Author":"Stephen King",
-    "Price":"$9.99", 
+    "Price":"9.99", 
     "url": "https://m.media-amazon.com/images/I/51veNDqWkhL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995q"},
     "Title":"The Hunger Games",
     "Author":"Suzanne Collins",
-    "Price":"$10.99", 
+    "Price":"10.99", 
     "url": "https://m.media-amazon.com/images/I/4134W9qxFIL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995r"},
     "Title":"Catching Fire",
     "Author":"Suzanne Collins",
-    "Price":"$11.99", 
+    "Price":"11.99", 
     "url": "https://m.media-amazon.com/images/I/51fbane1fiL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995s"},
     "Title":"MockingJay",
     "Author":"Suzanne Collins",
-    "Price":"$11.99", 
+    "Price":"11.99", 
     "url": "https://m.media-amazon.com/images/I/51qbwSjddEL._SX311_BO1,204,203,200_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995t"},
     "Title":"A Ballad of Songbirds and Snakes",
     "Author":"Suzanne Collins",
-    "Price":"$13.99", 
+    "Price":"13.99", 
     "url": "https://m.media-amazon.com/images/I/512fBEQomNL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995u"},
     "Title":"Death of a Salesman",
     "Author":"Arthur Miller",
-    "Price":"$5.99", 
+    "Price":"5.99", 
     "url": "https://m.media-amazon.com/images/I/31wfO4jvT6L._SX384_BO1,204,203,200_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995v"},
     "Title":"The Catcher in the Rye",
     "Author":"J.D. Salinger",
-    "Price":"$12.99", 
+    "Price":"12.99", 
     "url": "https://m.media-amazon.com/images/I/518dVCGFuhL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995w"},
     "Title":"The Great Gatsby",
     "Author":"F. Scott Fitzgerald",
-    "Price":"$9.99", 
+    "Price":"9.99", 
     "url": "https://m.media-amazon.com/images/I/41NssxNlPlS._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995x"},
     "Title":"Lord of the Flies",
     "Author":"William Golding",
-    "Price":"$5.79", 
+    "Price":"5.79", 
     "url": "https://m.media-amazon.com/images/I/51eeAWItwbL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995y"},
     "Title":"Of Mice and Men",
     "Author":"John Steinbeck",
-    "Price":"$9.38", 
+    "Price":"9.38", 
     "url": "https://m.media-amazon.com/images/I/41VNrYdg7EL._SX281_BO1,204,203,200_.jpg"
 },
 {
     "_id":{"$oid":"64c1b43927d082f9a27d995z"},
     "Title":"The Scarlet Letter",
     "Author":"Nathaniel Hawthorne",
-    "Price":"$7.99", 
+    "Price":"7.99", 
     "url": "https://m.media-amazon.com/images/I/417Ps4giZ9L._SY291_BO1,204,203,200_QL40_FMwebp_.jpg"
 }
 ]
