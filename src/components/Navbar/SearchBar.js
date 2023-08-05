@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-import { FaSearch } from "react-icons/fa";
+import { FaSearch, FaShoppingCart } from "react-icons/fa";
 import "./SearchBar.css";
 import axios from 'axios';
+import ShoppingCart from '../ShoppingCart/ShoppingCart';
 
 const SearchBar = () => {
   const [input, setInput] = useState("");
   const [results, setResults] = useState([]);
-  const [searchAttempted, setSearchAttempted] = useState(false);
+  const [cartItems, setCartItems] = useState([]);
+  const [showCart, setShowCart] = useState(false);
+  const [searched, setSearched] = useState(false);
 
   const fetchData = (value) => {
     axios.get('books.json')
@@ -20,22 +23,29 @@ const SearchBar = () => {
           );
         });
         setResults(filteredResults);
-        setSearchAttempted(true);
+        setSearched(true);
       })
       .catch(error => {
         console.log(error);
         setResults([]);
-        setSearchAttempted(true);
+        setSearched(true);
       });
   };
 
   const handleChange = (value) => {
     setInput(value);
-    setSearchAttempted(false);
   };
 
   const handleSearch = () => {
     fetchData(input);
+  };
+
+  const addToCart = (item) => {
+    setCartItems([...cartItems, item]);
+  };
+
+  const removeFromCart = (id) => {
+    setCartItems(cartItems.filter((item) => item._id !== id));
   };
 
   return (
@@ -52,23 +62,27 @@ const SearchBar = () => {
         <button className="search-button" onClick={handleSearch}>Search</button>
       </div>
       <div className="results-container">
-        {searchAttempted && results.length === 0 ? (
-          <div>No results found.</div>
-        ) : (
-          results.map(post => (
-            <div key={post._id} className="book-item">
-              <img src={post.url} alt="a Harry Potter Cover" />
-              <div className="book-details">
-                <div className="title">{post.Title}</div>
-                <div className="author">{post.Author}</div>
-                <div className="price">{post.Price}</div>
-              </div>
+        {searched && results.length === 0 && <div>No results found.</div>}
+        {results.map(post => (
+          <div key={post._id} className="book-item">
+            <img src={post.url} alt="a Harry Potter Cover" />
+            <div className="book-details">
+              <div className="title">{post.Title}</div>
+              <div className="author">{post.Author}</div>
+              <div className="price">{post.Price}</div>
+              <button onClick={() => addToCart(post)}>Add to Cart</button>
             </div>
-          ))
-        )}
+          </div>
+        ))}
       </div>
+      <div className="cart-icon" onClick={() => setShowCart(!showCart)}>
+        <FaShoppingCart />
+        {cartItems.length > 0 && <span className="cart-items-count">{cartItems.length}</span>}
+      </div>
+      {showCart && <ShoppingCart cartItems={cartItems} removeFromCart={removeFromCart} setShowCart={setShowCart} />}
     </div>
   );
 };
 
 export default SearchBar;
+
