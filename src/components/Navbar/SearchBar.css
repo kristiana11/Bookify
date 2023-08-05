@@ -1,27 +1,97 @@
-.input-wrapper { 
-    background-color: white;
-    width: 100%;
-    border-radius: 10px;
-    height: 2.5rem;
-    padding: 0 15px;
-    box-shadow: 0px 0px 8px #ddd;
-    display: flex;
-    align-items: center; 
+.search-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-wrapper {
+  background-color: white;
+  width: 100%;
+  border-radius: 10px;
+  height: 2.5rem;
+  padding: 0 15px;
+  box-shadow: 0px 0px 8px #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  flex: 1; 
 }
 
 input {
-    background-color: transparent;
-    border: none;
-    height: 100%;
-    font-size: 1.25rem;
-    width: 100%;
-    margin-left: 5px;
+  background-color: transparent;
+  border: none;
+  height: 100%;
+  font-size: 1.25rem;
+  width: 100%;
+  margin-left: 5px;
 }
 
 input:focus {
-    outline: none;
+  outline: none;
 }
 
 #search-icon {
-    color: royalblue;
+  color: royalblue;
 }
+
+.search-button {
+  background-color: rosybrown;
+  color: white;
+  border: none;
+  height: 2rem;
+  width: 70px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.results-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.book-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  width: calc(33.33% - 20px); 
+}
+
+.book-item img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.book-details {
+  text-align: center;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.author {
+  margin-bottom: 5px;
+}
+
+.price {
+  color: royalblue;
+}
+ 
