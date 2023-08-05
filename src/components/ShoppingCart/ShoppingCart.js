@@ -1,15 +1,19 @@
-import React from 'react';
-import { FaTimes } from "react-icons/fa";
+import React, { useState } from 'react';
+import { FaTimes, FaTrash } from "react-icons/fa"; 
 import './ShoppingCart.css';
+import Checkout from './Checkout';
 
 const ShoppingCart = ({ cartItems, removeFromCart, setShowCart }) => {
-  const getTotalPrice = () => {
-    const total = cartItems.reduce((sum, item) => sum + parseFloat(item.Price.replace('$', '')), 0);
-    return total.toFixed(2);
-  };
-  
+  const [showCheckout, setShowCheckout] = useState(false);
 
-  
+  const getTotalPrice = () => {
+    return cartItems.reduce((sum, item) => sum + parseFloat(item.Price.replace('$', '')), 0);
+  };
+
+  const handleCheckout = () => {
+    setShowCheckout(true);
+  };
+
   return (
     <div className="cart-container">
       <div className="cart-header">
@@ -25,14 +29,15 @@ const ShoppingCart = ({ cartItems, removeFromCart, setShowCart }) => {
               <div className="title">{item.Title}</div>
               <div className="price">${item.Price}</div>
               <button className="delete-button" onClick={() => removeFromCart(item._id)}>
-                <FaTimes />
+                <FaTrash />
               </button>
             </div>
           ))}
-          <div className="cart-total">Total: ${getTotalPrice()}</div>
-          <button className="checkout-button">Checkout</button>
+          <div className="cart-total">Total: ${getTotalPrice().toFixed(2)}</div>
+          <button className="checkout-button" onClick={handleCheckout}>Checkout</button>
         </>
       )}
+      {showCheckout && <Checkout cartItems={cartItems} setShowCart={setShowCart} />}
     </div>
   );
 };
