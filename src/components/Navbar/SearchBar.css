@@ -40,7 +40,7 @@ input:focus {
 }
 
 .search-button {
-  background-color: rosybrown;
+  background-color: rgb(140, 105, 105);
   color: white;
   border: none;
   height: 2rem;
