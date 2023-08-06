@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Checkout.css';
+import axios from 'axios';
 
 const Checkout = ({ cartItems, setShowCart }) => {
   const [firstName, setFirstName] = useState('');
@@ -35,12 +36,21 @@ const Checkout = ({ cartItems, setShowCart }) => {
       phone,
       paymentMethod,
       cartItems,
-      totalPrice: getTotalPrice()
+      totalPrice: getTotalPrice(),
     };
-    console.log(orderDetails);
-    alert('Ordered Finalized! Total amount: $' + getTotalPrice().toFixed(2));
-    setShowCart(false);
-  };
+
+    // Backend request
+    axios.post('http://localhost:5001/Bookify/api/orders', orderDetails)
+      .then((response) => {
+        console.log(response.data.message); 
+        alert('Ordered Finalized! Total amount: $' + getTotalPrice().toFixed(2));
+        setShowCart(false);
+      })
+      .catch((error) => {
+        console.error(error);
+        alert('Error finalizing order. Please try again later.');
+      });
+    };
 
   return (
     <div className="checkout-container">
