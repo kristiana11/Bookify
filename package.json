@@ -50,7 +50,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^5.0.0",
-    "nodemod": "^3.0.6"
+    "gh-pages": "^5.0.0"
   }
 }

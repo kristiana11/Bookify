@@ -7,14 +7,13 @@ import LoginUser from "./components/UserLogin/Login";
 function App() {
 
   const [results, setResults] = useState([])
-  const [setLogin] = useState([])
 
   return (
     <div className="App">
 
       <div className="login-bar">
         <h2>Login</h2>
-        <LoginUser setLogin={setLogin}/>
+        <LoginUser />
       </div>
 
       <div className="search-bar">

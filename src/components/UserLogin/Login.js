@@ -6,20 +6,37 @@ function LoginUser() {
     const [password, setPassword] = useState("");
     const handleOnSubmit = async (e) => {
         e.preventDefault();
+
         let result = await fetch(
-        'http://localhost:3000/', {
+        'users.json', {
             method: "post",
             body: JSON.stringify({ username, password }),
             headers: {
                 'Content-Type': 'application/json'
             }
         })
+
         result = await result.json();
-        console.warn(result);
-        if (result) {
-            alert("Data saved succesfully");
-            setPassword("");
-            setUserName("");
+        let length = result.length
+        let i = 0;
+        let flag = false;
+        // console.warn(result);
+        while(i < length) {
+          if (username.toLowerCase() === result[i].Username.toLowerCase() && password === result[i].Password) {
+              flag = true;
+              break;
+          }
+          i++;
+        }
+
+        if(flag === true){
+          alert("Success! You are now logged in");
+              setPassword("");
+              setUserName("");
+        }
+        
+        else {
+          alert('Incorrect Username or Password');
         }
     }
 
