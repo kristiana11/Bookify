@@ -22,9 +22,10 @@ function LoginUser() {
         let flag = false;
         // console.warn(result);
         while(i < length) {
-          if (username.toLowerCase() === result[i].Username.toLowerCase() && password === result[i].Password) {
-              flag = true;
-              break;
+
+          if (username === result[i].Username && password === result[i].Password) {
+          flag = true;
+            break;
           }
           i++;
         }

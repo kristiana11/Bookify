@@ -1,7 +1,7 @@
 [
     {
         "_id":{"$oid":"64c1b2a527d082f9a27d9956"},
-        "Username":"Cjm758",
+        "Username":"cjm758",
         "Email":"cjm758@gmail.com",
         "Password":"password123"
     },
@@ -9,12 +9,12 @@
         "_id":{"$oid":"64c1b2a527d082f9a27d9956"},
         "Username":"kvk23",
         "Email":"kvk23@gmail.com",
-        "Price":"password123"
+        "Password":"password123"
     },
     {
         "_id":{"$oid":"64c1b2a527d082f9a27d9956"},
         "Username":"alo248",
         "Email":"alo248@gmail.com",
-        "Password":"passowrd123"
+        "Password":"password123"
     }
 ]
