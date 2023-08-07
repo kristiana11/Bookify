@@ -3,6 +3,8 @@ import './App.css';
 import SearchBar from "./components/Navbar/SearchBar";
 import SearchResultsList from "./components/Navbar/SearchResultsList";
 import LoginUser from "./components/UserLogin/Login";
+import { FaSign } from "react-icons/fa";
+import SignUpUser from "./components/UserLogin/SignUp";
 
 function App() {
 
@@ -12,8 +14,9 @@ function App() {
     <div className="App">
 
       <div className="login-bar">
-        <h2>Login</h2>
+        <h2>Login/Sign Up</h2>
         <LoginUser />
+        <SignUpUser />
       </div>
 
       <div className="search-bar">

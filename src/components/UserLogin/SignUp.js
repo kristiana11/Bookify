@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./Login.css"
 
+
 function SignUpUser() {
     const [username, setUserName] = useState("");
     const [email, setEmail] = useState("");
@@ -46,9 +47,9 @@ function SignUpUser() {
         if(flag === false){
 
           alert("Account Successfully Added!");
-          // setUserName("");
-          // setEmail("");
-          // setPassword("");
+          setUserName("");
+          setEmail("");
+          setPassword("");
         }
         
         else {

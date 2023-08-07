@@ -1,46 +1,45 @@
 import React, { useState } from 'react'
-import SignUpUser from "./SignUp";
 import "./Login.css"
-
+  
 function LoginUser() {
-    const [username, setUserName] = useState("");
-    const [password, setPassword] = useState("");
-    const handleOnSubmit = async (e) => {
-        e.preventDefault();
+  const [username, setUserName] = useState("");
+  const [password, setPassword] = useState("");
+  const handleOnSubmit = async (e) => {
+    e.preventDefault();
 
-        let result = await fetch(
-        'users.json', {
-            method: "post",
-            body: JSON.stringify({ username, password }),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        })
+    let result = await fetch(
+    'users.json', {
+      method: "post",
+      body: JSON.stringify({ username, password }),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      
+      result = await result.json();
+      let length = result.length
+      let i = 0;
+      let flag = false;
+      // console.warn(result);
+      while(i < length) {
 
-        result = await result.json();
-        let length = result.length
-        let i = 0;
-        let flag = false;
-        // console.warn(result);
-        while(i < length) {
-
-          if (username === result[i].Username && password === result[i].Password) {
+        if (username === result[i].Username && password === result[i].Password) {
           flag = true;
-            break;
-          }
+          break;
+        }
           i++;
-        }
-
-        if(flag === true){
-          alert("Success! You are now logged in");
-          setPassword("");
-          setUserName("");
-        }
-        
-        else {
-          alert('Incorrect Username or Password');
-        }
+      }
+    
+    if(flag === true){
+      alert("Success! You are now logged in");
+      setPassword("");
+      setUserName("");
     }
+    
+    else {
+      alert('Incorrect Username or Password');
+    }
+  }
 
   return (
     <div>
@@ -50,22 +49,22 @@ function LoginUser() {
             placeholder="User Name" 
             value={username}
             onChange={(e) => setUserName(e.target.value)}
-          />
+            />
         </div>
         <div className="login-wrapper">
           <input type="password" 
             placeholder="Password" 
             value={password}
             onChange={(e) => setPassword(e.target.value)}
-          />
+            />
         </div>
         <div>
           <button className="login-button" onClick={handleOnSubmit}>Login</button>
-          <button className="login-button" onClick={handleOnSubmit}>Sign Up</button>
         </div>
       </form>
     </div>
   )
 }
+
 
 export default LoginUser;
