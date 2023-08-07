@@ -11,10 +11,12 @@
 .login-button {
     color: rosybrown;
     margin-top: 20px;
+    margin-right: 80px;
     font-size: 16px;
     border-color: bisque;
     padding: 5px;
 }
+
 .login-button:hover {
     cursor: pointer;
 }

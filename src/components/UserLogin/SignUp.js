@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import SignUpUser from "./SignUp";
 import "./Login.css"
 
-function LoginUser() {
+function SignUpUser() {
     const [username, setUserName] = useState("");
+    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const handleOnSubmit = async (e) => {
         e.preventDefault();
@@ -11,34 +11,51 @@ function LoginUser() {
         let result = await fetch(
         'users.json', {
             method: "post",
-            body: JSON.stringify({ username, password }),
+            body: JSON.stringify({ username, email, password }),
             headers: {
                 'Content-Type': 'application/json'
             }
         })
 
         result = await result.json();
-        let length = result.length
+        let length = result.length;
+        console.log("Before Adding data",JSON.stringify(result, null, 4));
+        let id = length + 1;
+        result.push({
+          _id: id,
+          Username: username,
+          Email: email,
+          Password: password
+        })
+        console.log("After Adding data",JSON.stringify(result, null, 4));
+
         let i = 0;
         let flag = false;
         // console.warn(result);
         while(i < length) {
 
-          if (username === result[i].Username && password === result[i].Password) {
+          if (username === result[i].Username 
+            && password === result[i].Password
+            && email === result[i].Email) {
           flag = true;
             break;
           }
           i++;
         }
+        
+        if(flag === false){
 
-        if(flag === true){
-          alert("Success! You are now logged in");
-          setPassword("");
-          setUserName("");
+          alert("Account Successfully Added!");
+          // setUserName("");
+          // setEmail("");
+          // setPassword("");
         }
         
         else {
-          alert('Incorrect Username or Password');
+          alert('Account Already Exists!');
+          // setUserName("");
+          // setEmail("");
+          // setPassword("");
         }
     }
 
@@ -53,6 +70,13 @@ function LoginUser() {
           />
         </div>
         <div className="login-wrapper">
+          <input 
+            placeholder="Email" 
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+        <div className="login-wrapper">
           <input type="password" 
             placeholder="Password" 
             value={password}
@@ -60,7 +84,6 @@ function LoginUser() {
           />
         </div>
         <div>
-          <button className="login-button" onClick={handleOnSubmit}>Login</button>
           <button className="login-button" onClick={handleOnSubmit}>Sign Up</button>
         </div>
       </form>
@@ -68,4 +91,4 @@ function LoginUser() {
   )
 }
 
-export default LoginUser;
+export default SignUpUser;
