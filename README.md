@@ -43,8 +43,30 @@ For Phase-2 of our deliverable, we will have more implementations to due in orde
 + Shopping Cart/Checkout: Kristiana
 + Bookshelf: Andrew
 
+### Features/Functionalities implemented:
++ Navbar w/ functionality: Kristiana was able to successfully implemented the search bar to work with the database we created. She was able to fetch the data with axios.get and was able to read the data that Andrew put in the books.json file. As you can see, she added a search button and the book detail that Andrew and her created are available to see.
+<img width="586" alt="Screenshot 2023-08-06 at 5 44 52 PM" src="https://github.com/kristiana11/Bookify/assets/93414377/4592211b-0997-43f8-87c3-dcedaa0c392f">
+<img width="492" alt="Screenshot 2023-08-06 at 5 47 58 PM" src="https://github.com/kristiana11/Bookify/assets/93414377/fc49f9fc-3345-4a82-85f1-947e3cdd6011">
+
++ Shopping Cart/Checkout: Kristiana was able to successfully implement this feature. She was able to have a shopping cart icon on the page. When you click it, it opened up the shopping cart to the right of it and you could see the book title, price, a trash icon to delete it, and the total price. The checkout button was available there as well. When clicked, it prompts you to enter in details which will be sent to our database.
+![Screenshot 2023-08-06 at 5 48 55 PM](https://github.com/kristiana11/Bookify/assets/93414377/445401d7-0f34-4c26-8b06-1f83c34a6c8c)
+<img width="343" alt="Screenshot 2023-08-06 at 5 51 43 PM" src="https://github.com/kristiana11/Bookify/assets/93414377/cf777c3c-bbf1-466c-bc49-add4c0dccedd">
+The backend was a bit trickier to connect it all, but Kristiana created a model for the order and set up a POST request to save the order details.When sent to our database, we get a console log showing what was inserted.
+<img width="602" alt="Screenshot 2023-08-06 at 5 55 23 PM (1)" src="https://github.com/kristiana11/Bookify/assets/93414377/71c36030-99e8-4133-b3c2-470fd25ad2db">
+
+![Screenshot 2023-08-06 at 5 54 18 PM (1)](https://github.com/kristiana11/Bookify/assets/93414377/086e3828-5800-4971-b926-18ea7b04ba70)
+
++ Book details: Andrew was in charge of implementing this. He started out with the Harry Potter series so that Kristiana could implement this. Once implemented, Andrew and Kristiana worked on the css together. They stuck with having three books in a row that showed the title, book cover, author, and price. After that happened, Andrew implemented more books from young adult to literature classics.
+![Screenshot 2023-08-05 at 1 34 13 PM](https://github.com/kristiana11/Bookify/assets/93414377/d13596f4-bb9e-489a-abe9-8f5e322427b2)
+
++ Sign in/sign up: Corey was able to implement this feature. Corey added all three of us onto a users.json file. He got it so when you login, if an account does not exist and you try, there will be an error message. Since we implemented it through a json file, we could not implement adding new users to it from the site itself. 
+![pasted image 0](https://github.com/kristiana11/Bookify/assets/93414377/3dd9f774-e402-4499-ab24-e43f699f31cd)
+Corey coded so the project login feature will fetch data from the json file and turn it into an array. It will notify if they are signed in.
+![pasted image 0 (1)](https://github.com/kristiana11/Bookify/assets/93414377/77402a60-06e2-4ec1-b691-70535b00da49)
+
+
 # Overview of Final Project Proposal Plan
-Our final plan for Bookify is to implement a list of React components like a navigation bar, home page, book listing/details, user authentication, shopping cart/checkout, and a user bookshelf. This requires us to know back-end and front-end development. We have functions and logics for each component that is listed in our Group Project Final Draft in our planning foler. This will help us keep track of which function is for what. With that being said, we will also have API request-response formats and endpoint routes. We want our design to be user-friendly. We are basing it off of a simple Kindle or Apple books. Having a simple way of looking at their bookshelf, searching up books, and loggin in/signing out. We originally wanted a ton of books, but to make it on a do-able scale, we decided to do the Harry Potter books for right now until we implement everything.
+Our final plan for Bookify is to implement a list of React components like a navigation bar,book listing/details, user authentication, and a shopping cart/checkout This requires us to know back-end and front-end development. We have functions and logics for each component that is listed in our Group Project Final Draft in our planning foler. This will help us keep track of which function is for what. With that being said, we will also have API request-response formats and endpoint routes. We want our design to be user-friendly. We are basing it off of a simple Kindle or Apple books. Having a simple way of looking at their bookshelf, searching up books, and loggin in/signing out. We originally wanted a ton of books, but to make it on a do-able scale, we decided to do the Harry Potter books for right now until we implement everything.
 
 # Team Information
 ### Andrew Ortega

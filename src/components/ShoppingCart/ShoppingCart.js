@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import { FaTimes, FaTrash } from "react-icons/fa"; 
+import { FaTimes, FaTrash } from 'react-icons/fa';
 import './ShoppingCart.css';
 import Checkout from './Checkout';
+import { v4 as uuidv4 } from 'uuid';
 
 const ShoppingCart = ({ cartItems, removeFromCart, setShowCart }) => {
   const [showCheckout, setShowCheckout] = useState(false);
@@ -25,7 +26,7 @@ const ShoppingCart = ({ cartItems, removeFromCart, setShowCart }) => {
       ) : (
         <>
           {cartItems.map((item) => (
-            <div key={item._id} className="cart-item">
+            <div key={uuidv4()} className="cart-item">
               <div className="title">{item.Title}</div>
               <div className="price">${item.Price}</div>
               <button className="delete-button" onClick={() => removeFromCart(item._id)}>
@@ -34,7 +35,9 @@ const ShoppingCart = ({ cartItems, removeFromCart, setShowCart }) => {
             </div>
           ))}
           <div className="cart-total">Total: ${getTotalPrice().toFixed(2)}</div>
-          <button className="checkout-button" onClick={handleCheckout}>Checkout</button>
+          <button className="checkout-button" onClick={handleCheckout}>
+            Checkout
+          </button>
         </>
       )}
       {showCheckout && <Checkout cartItems={cartItems} setShowCart={setShowCart} />}
