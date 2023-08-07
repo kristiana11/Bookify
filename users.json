@@ -1,18 +1,18 @@
 [
     {
-        "_id":{"$oid":"64c1b2a527d082f9a27d9956"},
+        "_id":1,
         "Username":"cjm758",
         "Email":"cjm758@gmail.com",
         "Password":"password123"
     },
     {
-        "_id":{"$oid":"64c1b2a527d082f9a27d9956"},
+        "_id":2,
         "Username":"kvk23",
         "Email":"kvk23@gmail.com",
         "Password":"password123"
     },
     {
-        "_id":{"$oid":"64c1b2a527d082f9a27d9956"},
+        "_id":3,
         "Username":"alo248",
         "Email":"alo248@gmail.com",
         "Password":"password123"
