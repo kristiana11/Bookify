@@ -23,7 +23,7 @@ For Phase-1 of our deliverable, we split up the tasks into front-end and back-en
 + Book Database: Andrew was in charge of this implementation. To start out, he used the Harry Potter books as a basis for what we wanted to display. This included the id, title, author, description, cover image, and the price of the book. Unfortunately, he was unable to implement it fully in time for phase-1. He was able to create the book title and everything like that.
 <img width="227" alt="Screenshot 2023-07-30 at 11 45 58 PM" src="https://github.com/kristiana11/Bookify/assets/93414377/f3a41bd0-4b2f-4751-b3ee-9d0826fe88f5">
 
-+ User Sign In: Corey was in charge of this implementation. He created the beginner logic to allow users to create and sign into their account. He was able to implement the login, but not the create yet. He will do taht in phase-2 of our deliverable.
++ User Sign In: Corey was in charge of this implementation. He created the beginner logic to allow users to create and sign into their account. He was able to implement the login, but not the create yet. He will do that in phase-2 of our deliverable.
 <img width="354" alt="Screenshot 2023-07-30 at 11 48 08 PM" src="https://github.com/kristiana11/Bookify/assets/93414377/dc8d878c-f112-4f28-b852-4ede4196d6e7">
 
 
