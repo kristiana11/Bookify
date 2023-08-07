@@ -1,19 +1,20 @@
 import React, { useState } from 'react';
-import { FaSearch, FaShoppingCart } from "react-icons/fa";
-import "./SearchBar.css";
+import { FaSearch, FaShoppingCart } from 'react-icons/fa';
+import './SearchBar.css';
 import axios from 'axios';
 import ShoppingCart from '../ShoppingCart/ShoppingCart';
 
 const SearchBar = () => {
-  const [input, setInput] = useState("");
+  const [input, setInput] = useState('');
   const [results, setResults] = useState([]);
   const [cartItems, setCartItems] = useState([]);
   const [showCart, setShowCart] = useState(false);
   const [searched, setSearched] = useState(false);
 
   const fetchData = (value) => {
-    axios.get('books.json')
-      .then(response => {
+    axios
+      .get('books.json')
+      .then((response) => {
         const filteredResults = response.data.filter((post) => {
           return (
             value &&
@@ -25,7 +26,7 @@ const SearchBar = () => {
         setResults(filteredResults);
         setSearched(true);
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error);
         setResults([]);
         setSearched(true);
@@ -38,6 +39,12 @@ const SearchBar = () => {
 
   const handleSearch = () => {
     fetchData(input);
+  };
+
+  const handleKeyPress = (e) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
   };
 
   const addToCart = (item) => {
@@ -57,13 +64,16 @@ const SearchBar = () => {
             placeholder="Type to search..."
             value={input}
             onChange={(e) => handleChange(e.target.value)}
+            onKeyPress={handleKeyPress}
           />
         </div>
-        <button className="search-button" onClick={handleSearch}>Search</button>
+        <button className="search-button" onClick={handleSearch}>
+          Search
+        </button>
       </div>
       <div className="results-container">
         {searched && results.length === 0 && <div>No results found.</div>}
-        {results.map(post => (
+        {results.map((post) => (
           <div key={post._id} className="book-item">
             <img src={post.url} alt="a Harry Potter Cover" />
             <div className="book-details">
@@ -85,4 +95,3 @@ const SearchBar = () => {
 };
 
 export default SearchBar;
-
