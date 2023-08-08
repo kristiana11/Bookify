@@ -51,6 +51,7 @@ For Phase-2 of our deliverable, we will have more implementations to due in orde
 + Shopping Cart/Checkout: Kristiana was able to successfully implement this feature. She was able to have a shopping cart icon on the page. When you click it, it opened up the shopping cart to the right of it and you could see the book title, price, a trash icon to delete it, and the total price. The checkout button was available there as well. When clicked, it prompts you to enter in details which will be sent to our database.
 ![Screenshot 2023-08-06 at 5 48 55 PM](https://github.com/kristiana11/Bookify/assets/93414377/445401d7-0f34-4c26-8b06-1f83c34a6c8c)
 <img width="343" alt="Screenshot 2023-08-06 at 5 51 43 PM" src="https://github.com/kristiana11/Bookify/assets/93414377/cf777c3c-bbf1-466c-bc49-add4c0dccedd">
+
 The backend was a bit trickier to connect it all, but Kristiana created a model for the order and set up a POST request to save the order details.When sent to our database, we get a console log showing what was inserted.
 <img width="602" alt="Screenshot 2023-08-06 at 5 55 23 PM (1)" src="https://github.com/kristiana11/Bookify/assets/93414377/71c36030-99e8-4133-b3c2-470fd25ad2db">
 
@@ -61,6 +62,7 @@ The backend was a bit trickier to connect it all, but Kristiana created a model 
 
 + Sign in/sign up: Corey was able to implement this feature. Corey added all three of us onto a users.json file. He got it so when you login, if an account does not exist and you try, there will be an error message. Since we implemented it through a json file, we could not implement adding new users to it from the site itself. 
 ![pasted image 0](https://github.com/kristiana11/Bookify/assets/93414377/3dd9f774-e402-4499-ab24-e43f699f31cd)
+
 Corey coded so the project login feature will fetch data from the json file and turn it into an array. It will notify if they are signed in.
 ![pasted image 0 (1)](https://github.com/kristiana11/Bookify/assets/93414377/77402a60-06e2-4ec1-b691-70535b00da49)
 Corey also implemented a feature to allow a user to sign up. Although we could not get the username email or password to save to the .json file or a database, the logic is implemented to check to see if those inputted credentials were unique from the .json file.
