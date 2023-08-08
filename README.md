@@ -1,5 +1,5 @@
 # Bookify
-Web development project made my Kristiana and Andrew for Web Development II. The project uses NodeJS for the back-end integration and React for the front-end. 
+Web development project made my Kristiana, Corey, and Andrew for Web Development II. The project uses NodeJS for the back-end integration and React for the front-end. 
 
 # Project Idea
 The purpose of Bookify is to provide an online platform for users to explore, purchase, and read books convenietly. We based this project off of Kindle/Apple Books. Bookify will have a user-friendly interface that encourages user to browse books, search/discovery, user registration, shopping cart and checkout, and users should be able to manage their profile. The target audience for Bookify include book lovers of all age groups who prefer browsing and purchasing books online or individuals who enjoy exploring a range of genres. Book browsing and searching, user registration, and shopping cart and checkout are some of Bookify's functionality. We are also hoping to implement a personalized recommendations to users based on their reading history and preference. Say you liked reading 'Harry Potter and the Sorcerer's Stone', then Bookify would recommend a novel similar.  It could be The Chamber of Secrets or something entirely different.
@@ -71,7 +71,7 @@ The backend was a bit trickier to connect it all, but Kristiana created a model 
 ![image](https://github.com/kristiana11/Bookify/assets/102387612/a512eae4-f165-4e4c-9e34-5e93f83bbafe)
 
 # Phase-1 and Phase-2 deliverable
-Overall, Phase-1 and Phase-2 deliverables went well. In Phase-1, 
+Overall, Phase-1 and Phase-2 deliverables went well. In Phase-1, we developed the front-end look for Bookify (on GitHub pages), the login feature, the search bar, and the book database was in the process of being developed. We learned how to work GitHub pages, implement the search bar, better use mongoDB, communicate with the team on how we can achieve the same idea, connect mongoDB and reactJS to communicate with eachother, and working as a team. Communication is the key to figuring out what needs to be done and not done. In Phase-2, we developed the search functionallity with our database, shopping cart, checkout, book database, and the user sign-up. We successfully connected our mongoDB to our front-end for the order details and user-sign up. We learned how to take our time on the project and not rush our features, a lot can go into desinging just a small portion of the website, and communicate effectively with each other. Overall, we successfully implemented the navbar (search bar), book database, user sign in/log in, checkout cart/checkout, and the book details/bookfshelf. Overall, we feel pretty proud of ourselves and what we accomplished in two weeks
 
 # Setting up the project environment and running the project
 1. Download the zip to your local computer
