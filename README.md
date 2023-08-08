@@ -39,7 +39,7 @@ For Phase-2 of our deliverable, we will have more implementations to due in orde
 + Book Details: Kristiana/Andrew
 + Create Account: Corey
 ### Phase-2:
-+ Navigation (home page): Corey
++ Navigation (home page) & Sign Up: Corey
 + Shopping Cart/Checkout: Kristiana
 + Bookshelf: Andrew
 
@@ -63,10 +63,18 @@ The backend was a bit trickier to connect it all, but Kristiana created a model 
 ![pasted image 0](https://github.com/kristiana11/Bookify/assets/93414377/3dd9f774-e402-4499-ab24-e43f699f31cd)
 Corey coded so the project login feature will fetch data from the json file and turn it into an array. It will notify if they are signed in.
 ![pasted image 0 (1)](https://github.com/kristiana11/Bookify/assets/93414377/77402a60-06e2-4ec1-b691-70535b00da49)
+Corey also implemented a feature to allow a user to sign up. Although we could not get the username email or password to save to the .json file or a database, the logic is implemented to check to see if those inputted credentials were unique from the .json file.
+![image](https://github.com/kristiana11/Bookify/assets/102387612/64a61e4d-70f7-4d19-98b6-82c033d9b2ff)
+![image](https://github.com/kristiana11/Bookify/assets/102387612/a512eae4-f165-4e4c-9e34-5e93f83bbafe)
+
+
 
 
 # Overview of Final Project Proposal Plan
 Our final plan for Bookify is to implement a list of React components like a navigation bar,book listing/details, user authentication, and a shopping cart/checkout This requires us to know back-end and front-end development. We have functions and logics for each component that is listed in our Group Project Final Draft in our planning foler. This will help us keep track of which function is for what. With that being said, we will also have API request-response formats and endpoint routes. We want our design to be user-friendly. We are basing it off of a simple Kindle or Apple books. Having a simple way of looking at their bookshelf, searching up books, and loggin in/signing out. We originally wanted a ton of books, but to make it on a do-able scale, we decided to do the Harry Potter books for right now until we implement everything.
+
+# Final Implementations
+Our final implementation included a multitude of what we had planned to include. We were able to make a search bar that takes input and lists all available books based on what was typed in. The shopping cart feature can hold a user's items and calculate the total price. It also allows for the user to delete from the cart. The checkout feature includes all necessary components, including the ability to have every field required to fill out, and send order details to the database to store. The users can also login to an account that exists into our .json file. The user can also check to see if they can sign up with their account on the website. Overall, we completed a lot of what we aspired this website to be.
 
 # Team Information
 ### Andrew Ortega
